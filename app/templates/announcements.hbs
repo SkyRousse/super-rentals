@@ -1,0 +1,10 @@
+<h2>Important Annoucements!!</h2>
+
+<ul>
+  {{#each model as |announcement|}}
+    <li>{{announcement.title}} {{announcement.description}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}

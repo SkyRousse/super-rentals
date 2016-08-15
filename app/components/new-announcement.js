@@ -8,8 +8,8 @@ export default Ember.Component.extend({
     },
     save1() {
       var params = {
-      title: this.get('title')? this.get('title') : "",
-      description: this.get('description')? this.get('description') : "",
+        title: this.get('title')? this.get('title') : "",
+        description: this.get('description')? this.get('description') : "",
       };
       this.set('addNewAnnouncement', false);
       this.sendAction('save2', params)

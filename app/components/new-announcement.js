@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         description: this.get('description')? this.get('description') : "",
       };
       this.set('addNewAnnouncement', false);
-      this.sendAction('save2', params)
+      this.sendAction('save2', params);
     }
   }
 });
